@@ -1,0 +1,44 @@
+
+@media (max-width: 1200px){
+    .formdanhgia .rating label::after{
+        content: '\f005';
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        position: absolute;
+        display: block;
+        font-size: 15px;
+        color: #F7A623;
+        top: 158px;
+        opacity: 0;
+        transition: 0.2s;
+    }
+     
+}
+
+
+@media (max-width: 990px){
+    .formdanhgia .rating label::after{
+        content: '\f005';
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        position: absolute;
+        display: block;
+        font-size: 15px;
+        color: #F7A623;
+        top: 203px;
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+   
+   
+}
+
+/* mobile */
+@media (max-width: 739px){
+   
+}

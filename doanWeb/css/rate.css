@@ -1,0 +1,22 @@
+.rate-product{
+    width: 100%;
+    margin-top: 26px;
+}
+
+.rate-product--item{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-top: 34px;
+    padding-top: 22px;
+
+}
+ 
+
+.rate-name{
+    font-weight: bold
+}
+
+.rate-evaluate{
+    overflow-wrap: anywhere;
+
+}
