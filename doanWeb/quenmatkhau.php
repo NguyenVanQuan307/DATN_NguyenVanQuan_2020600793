@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
         // print_r($sql);
         $test = mysqli_num_rows($sql);
         // print_r($test);
-        if ($test==0) { 
+        if ($test==0) {
             $loi['email'] ="Email không tồn tại";
         }
         else{

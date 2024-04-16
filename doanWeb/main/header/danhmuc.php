@@ -22,7 +22,7 @@ include'connect_db.php';
                             <li> <a href="danhsachsp.php?id=<?php echo $row['id']?>"> <?php echo $row['name']?> </a><i class=" "></i>
                             </li>
                             <?php
-                                } 
+                                }
                             ?>
                         </ul>
                         </div>

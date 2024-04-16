@@ -20,7 +20,7 @@ if(!isset($_SESSION))
 $error = [];
 $email = isset($_POST['email']) ? $_POST['email'] :'';
 include 'connect_db.php';
-if(isset($_POST['submit'])) 
+if(isset($_POST['submit']))
 {
 $password = isset($_POST['password']) ? $_POST['password'] :'';
 $rpassword = isset($_POST['rpassword']) ? $_POST['rpassword'] :'';

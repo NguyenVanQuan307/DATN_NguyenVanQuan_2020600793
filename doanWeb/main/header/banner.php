@@ -23,7 +23,7 @@
                                 <a href="#"><img src="images/banner/banner4.jpg" class="img-fluid"
                                         style="height: 500px;"  width="1200px"  alt="Third slide"></a>
                             </div>
-                        </div> 
+                        </div>
                         <a class="carousel-control-prev" href="#carouselId" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>

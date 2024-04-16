@@ -35,5 +35,5 @@ include './connect_db.php';
                         <?php } ?>
                     </div>
                     
-                </ul> 
+                </ul>
                 

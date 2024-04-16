@@ -15,7 +15,7 @@ and open the template in the editor.
             .box-content{
                 margin: 0 auto;
                 width: 800px;
-                border: 1px solid #ccc; 
+                border: 1px solid #ccc;
                 text-align: center;
                 padding: 20px;
             }

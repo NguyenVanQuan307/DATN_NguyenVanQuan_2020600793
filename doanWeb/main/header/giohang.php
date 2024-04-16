@@ -28,7 +28,7 @@ if(isset($_SESSION['user']))
     <?php
 }
 else
-{ 
+{
     ?>
 <ul class="navbar-nav mb-1 ml-auto" style="display: none">
                 <li class="nav-item giohang">

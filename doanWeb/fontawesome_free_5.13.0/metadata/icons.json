@@ -1,4 +1,4 @@
- {
+{
   "500px": {
     "changes": [
       "4.4",
@@ -10,7 +10,7 @@
     },
     "styles": [
       "brands"
-    ], 
+    ],
     "unicode": "f26e",
     "label": "500px",
     "voted": false,

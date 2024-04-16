@@ -16,7 +16,7 @@
                         <div class="noidung">
                             <h6 class="tieude font-weight-bold">MIỄN PHÍ GIAO HÀNG</h6>
                             <p class="detail">Từ 150.000đ ở TP.HCM</p>
-                            <p class="detail">Từ 300.000đ ở tỉnh thành khác</p> 
+                            <p class="detail">Từ 300.000đ ở tỉnh thành khác</p>
                         </div>
                     </div>
                 </div>

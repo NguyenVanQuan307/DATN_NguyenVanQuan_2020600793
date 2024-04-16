@@ -25,7 +25,7 @@
         if(empty($fullname))
         {
             $error['fullname'] ='Bạn chưa nhập tên';
-        } 
+        }
         if(empty($email))
         {
             $error['email'] ='Bạn chưa nhập email';

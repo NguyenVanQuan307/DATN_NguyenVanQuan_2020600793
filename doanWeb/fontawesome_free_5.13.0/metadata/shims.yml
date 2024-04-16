@@ -9,7 +9,7 @@ arrow-circle-o-left:
 arrow-circle-o-right:
   name: arrow-alt-circle-right
   prefix: far
-arrow-circle-o-up: 
+arrow-circle-o-up:
   name: arrow-alt-circle-up
   prefix: far
 arrows:

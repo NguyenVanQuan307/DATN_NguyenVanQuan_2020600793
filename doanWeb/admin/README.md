@@ -38,7 +38,7 @@ npm install adminbsb-materialdesign
 bower install adminbsb-materialdesign
 ```
 
-Documentation 
+Documentation
 ----------
 Visit the **[documentation](https://gurayyarar.github.io/AdminBSBMaterialDesign/documentation/)**
 

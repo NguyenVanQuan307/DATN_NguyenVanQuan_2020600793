@@ -30,7 +30,7 @@
 
                 <!-- ô đăng nhập đăng ký giỏ hàng trên header  -->
                <?php
-                include 'taikhoan.php'; 
+                include 'taikhoan.php';
                ?>
                 <?php
                 include 'giohang.php';

@@ -13,7 +13,7 @@
 
 @mixin fa-icon-rotate($degrees, $rotation) {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})";
-  transform: rotate($degrees); 
+  transform: rotate($degrees);
 }
 
 @mixin fa-icon-flip($horiz, $vert, $rotation) {

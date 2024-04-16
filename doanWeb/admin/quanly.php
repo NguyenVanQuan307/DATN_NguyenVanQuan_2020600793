@@ -39,7 +39,7 @@
                          <a href="nhanvien.php"><i class="material-icons">person_add</i></a>
                         </div>
                         <div class="content">
-                            <div class="text">Quản lý nhân viên</div> 
+                            <div class="text">Quản lý nhân viên</div>
                             <div class="number count-to" data-from="0" data-to="500" data-speed="1000" data-fresh-interval="20"></div>
                         </div>
                     </div>

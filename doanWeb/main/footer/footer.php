@@ -16,7 +16,7 @@
                         <h3 class="header text-uppercase font-weight-bold">HỖ TRỢ KHÁCH HÀNG</h3>
                         <a href="#">Hướng dẫn đặt hàng</a>
                         <a href="#">Phương thức thanh toán</a>
-                        <a href="#">Phương thức vận chuyển</a> 
+                        <a href="#">Phương thức vận chuyển</a>
                         <a href="#">Chính sách đổi trả</a>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ SET time_zone = "+00:00";
 
 
 --
--- Database: `doan` 
+-- Database: `doan`
 --
 
 -- --------------------------------------------------------
@@ -331,6 +331,8 @@ CREATE TABLE IF NOT EXISTS `product` (
   `image` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `price` float NOT NULL,
   `price_new` float NOT NULL,
+  `quantity` int DEFAULT 0,
+  `view` int DEFAULT 0, 
   `content` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `created_time` int NOT NULL,
   `last_updated` int NOT NULL,

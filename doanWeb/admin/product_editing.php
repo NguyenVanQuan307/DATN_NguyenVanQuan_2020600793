@@ -38,7 +38,7 @@ include 'function.php';
                     }
                     if (isset($_FILES['image']) && !empty($_FILES['image']['name'][0])) {
                         $uploadedFiles = $_FILES['image'];
-                        $result = uploadFiles($uploadedFiles); 
+                        $result = uploadFiles($uploadedFiles);
                         if (!empty($result['errors'])) {
                             $error = $result['errors'];
                         } else {

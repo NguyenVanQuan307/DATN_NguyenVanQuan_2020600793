@@ -11,7 +11,7 @@
 
 .row {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin-left: -4px;
     margin-right: -4px;
 }

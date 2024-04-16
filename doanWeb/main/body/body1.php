@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="khoisanpham" style="padding-bottom: 2rem;">
-                <?php 
+                <?php
                                 $sql = "SELECT * FROM product WHERE menu_id=1 LIMIT 8 ";
                                 $result = mysqli_query($con,$sql);
                                 while($row = mysqli_fetch_array($result))

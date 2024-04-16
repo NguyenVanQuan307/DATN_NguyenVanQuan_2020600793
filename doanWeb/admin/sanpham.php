@@ -7,7 +7,7 @@ $category = mysqli_query($con, "SELECT * FROM `product`  ");
 $total = mysqli_num_rows($category);
 
 //B2 : THiết lập số bảng ghi trên 1 trang
-$limit = 7; 
+$limit = 7;
 //B3: tính số trang
 $page = ceil($total / $limit);
 //B4: lấy trang hiện tại
@@ -15,42 +15,45 @@ $current_page = (isset($_GET['page']) ? $_GET['page'] : 1);
 //B5: tính start
 $start = ($current_page - 1) * $limit;
 //B6: query sử dụng limit
-$category = mysqli_query($con,"SELECT * FROM `product` LIMIT $start,$limit");
-    ?>
+$category = mysqli_query($con, "SELECT * FROM `product` LIMIT $start,$limit");
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <style>
-       img{
-  width: 100%;
-}
-.buttons{
-    text-align: right;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 15px;
-    line-height: 38px;
-}
-.buttons a{
-    color: #FFF;
-    padding: 10px;
-    background: #f44336;
-}
- .buttons a:hover {
-    color: #ffffff;
-    text-decoration: none;
-    opacity: 0.8;
-}
-.page-item {
-    border: 1px solid rgba(0,0,0,0.4);
-    width: 35px;
-    display: inline-block;
-    text-align: center;
-    line-height: 20px;
-    color: black;
-}
+        img {
+            width: 100%;
+        }
 
+        .buttons {
+            text-align: right;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+            line-height: 38px;
+        }
+
+        .buttons a {
+            color: #FFF;
+            padding: 10px;
+            background: #f44336;
+        }
+
+        .buttons a:hover {
+            color: #ffffff;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .page-item {
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            width: 35px;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            color: black;
+        }
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -80,18 +83,18 @@ $category = mysqli_query($con,"SELECT * FROM `product` LIMIT $start,$limit");
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="css/themes/all-themes.css" rel="stylesheet" />
-    
+
 </head>
 
 <body class="theme-red">
     <!-- Page Loader -->
-    
+
     <!-- #END# Page Loader -->
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
     <!-- Search Bar -->
-    
+
     <!-- #END# Search Bar -->
     <!-- Top Bar -->
     <nav class="navbar">
@@ -114,12 +117,12 @@ $category = mysqli_query($con,"SELECT * FROM `product` LIMIT $start,$limit");
             <!-- Menu -->
             <?php
             include "menu.php";
-           ?>
-            
+            ?>
+
         </aside>
         <!-- #END# Left Sidebar -->
         <!-- Right Sidebar -->
-       
+
         <!-- #END# Right Sidebar -->
     </section>
 
@@ -134,12 +137,12 @@ $category = mysqli_query($con,"SELECT * FROM `product` LIMIT $start,$limit");
             include "quanly.php";
             ?>
             <!-- #END# Widgets -->
-            
+
         </div>
     </section>
     <section class="content">
         <div class="container-fluid">
-            
+
             <!-- Basic Examples -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -150,11 +153,12 @@ $category = mysqli_query($con,"SELECT * FROM `product` LIMIT $start,$limit");
                             </h2>
                         </div>
                         <div class="body">
-                        <div class="buttons">
-                            <a href="./product_editing.php">Thêm sản phẩm</a>
-                             </div>
+                            <div class="buttons">
+                                <a href="./product_editing.php">Thêm sản phẩm</a>
+                                <a href="export_excel_product.php">Xuất Excel</a>
+                            </div>
                             <div class="table-responsive">
-                            
+
                                 <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                                     <thead>
                                         <tr>
@@ -162,6 +166,7 @@ $category = mysqli_query($con,"SELECT * FROM `product` LIMIT $start,$limit");
                                             <th>Tên sản phẩm</th>
                                             <th>Giá cũ </th>
                                             <th>Giá mới </th>
+                                            <th>Tồn kho </th>
                                             <th>Ngày cập nhật</th>
                                             <th>Ngày tạo</th>
                                             <th>Copy</th>
@@ -170,49 +175,50 @@ $category = mysqli_query($con,"SELECT * FROM `product` LIMIT $start,$limit");
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <?php
-                                    date_default_timezone_set('Asia/Saigon');
-                                    while ($row = mysqli_fetch_array($category)) { 
-                                    ?>
-                                
-                                        <tr> 
-                                            <td><img src="../<?= $row['image'] ?>" /></td>
-                                            <td><?= $row['name'] ?></td>
-                                            <td><?= number_format ($row['price']) ?> đ</td>
-                                            <td><?= number_format ($row['price_new']) ?> đ</td>
-                                            <td><?= date('d/m/Y H:i', $row['last_updated']) ?></td>
-                                            <td><?= date('d/m/Y H:i', $row['created_time']) ?></td>
-                                            <td><a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy" class="btn btn-danger">Copy</a></td>
-                                            <td><a href="./product_editing.php?id=<?= $row['id'] ?>" class="btn btn-danger">Sửa</a></td>
-                                            <td><a href="./product_delete.php?id=<?= $row['id'] ?>" class="btn btn-danger">Xóa</a></td>
-                                        </tr>
+                                        <?php
+                                        date_default_timezone_set('Asia/Saigon');
+                                        while ($row = mysqli_fetch_array($category)) {
+                                        ?>
+
+                                            <tr>
+                                                <td><img src="../<?= $row['image'] ?>" /></td>
+                                                <td><?= $row['name'] ?></td>
+                                                <td><?= number_format($row['price']) ?> đ</td>
+                                                <td><?= number_format($row['price_new']) ?> đ</td>
+                                                <td><?= $row['quantity'] ?></td>
+                                                <td><?= date('d/m/Y H:i', $row['last_updated']) ?></td>
+                                                <td><?= date('d/m/Y H:i', $row['created_time']) ?></td>
+                                                <td><a href="./product_editing.php?id=<?= $row['id'] ?>&task=copy" class="btn btn-danger">Copy</a></td>
+                                                <td><a href="./product_editing.php?id=<?= $row['id'] ?>" class="btn btn-danger">Sửa</a></td>
+                                                <td><a href="./product_delete.php?id=<?= $row['id'] ?>" class="btn btn-danger">Xóa</a></td>
+                                            </tr>
                                         <?php } ?>
                                     </tbody>
-                                     
+
                                 </table>
                                 <div class="pagination-bar my-3">
-                                <div class="col-12">
-                                    <nav>
-                                        <ul class="pagination justify-content-center">
-                                        
-                                        <ul class="pagination">
-                                           
-                                        <?php if($current_page -1 > 0) { ?>
-                                            <li><a href="sanpham.php?page=<?php echo $current_page -1 ?>">&laquo;</a></li>
-                                            <?php } ?>
-                                            <?php for($i=1; $i<=$page ;$i++) { ?>
-                                                <li class="<?php echo ($current_page ==$i) ? 'active' : '' ?>"><a href="sanpham.php?page=<?php echo $i ?>"><?php echo $i ?></a></li>
-                                              <?php  }?>
-                                              
-                                              <?php if($current_page +1 <= $page ) { ?>
-                                            <li><a href="sanpham.php?page=<?php echo $current_page +1 ?>">&raquo;</a></li>
-                                            <?php } ?>
-                                        </ul>
-                                        
-                                        
-                                        </ul>
-                                    </nav>
-                                </div>
+                                    <div class="col-12">
+                                        <nav>
+                                            <ul class="pagination justify-content-center">
+
+                                                <ul class="pagination">
+
+                                                    <?php if ($current_page - 1 > 0) { ?>
+                                                        <li><a href="sanpham.php?page=<?php echo $current_page - 1 ?>">&laquo;</a></li>
+                                                    <?php } ?>
+                                                    <?php for ($i = 1; $i <= $page; $i++) { ?>
+                                                        <li class="<?php echo ($current_page == $i) ? 'active' : '' ?>"><a href="sanpham.php?page=<?php echo $i ?>"><?php echo $i ?></a></li>
+                                                    <?php  } ?>
+
+                                                    <?php if ($current_page + 1 <= $page) { ?>
+                                                        <li><a href="sanpham.php?page=<?php echo $current_page + 1 ?>">&raquo;</a></li>
+                                                    <?php } ?>
+                                                </ul>
+
+
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
 
                             </div>
@@ -221,12 +227,12 @@ $category = mysqli_query($con,"SELECT * FROM `product` LIMIT $start,$limit");
                 </div>
             </div>
             <!-- #END# Basic Examples -->
-            
+
         </div>
         <?php
 
 
-?>
+        ?>
     </section>
 
     <!-- Jquery Core Js -->
@@ -270,14 +276,14 @@ $category = mysqli_query($con,"SELECT * FROM `product` LIMIT $start,$limit");
 
     <!-- Demo Js -->
     <script src="js/demo.js"></script>
-    
 
 
-  
 
 
-    
-    
+
+
+
+
 </body>
 
 </html>
