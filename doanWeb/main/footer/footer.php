@@ -3,8 +3,8 @@
             <div class="row">
                 <div class="col-md-3 col-xs-6">
                     <div class="gioithieu">
-                        <h3 class="header text-uppercase font-weight-bold">Về Computer Store</h3>
-                        <a href="#">Giới thiệu về Computer Store</a>
+                        <h3 class="header text-uppercase font-weight-bold">Về QLapTop</h3>
+                        <a href="#">Giới thiệu về QLapTop</a>
                         <a href="#">Tuyển dụng</a>
                         <div class="fb-like" data-href="https://www.facebook.com/DealBook-110745443947730/"
                             data-width="300px" data-layout="button" data-action="like" data-size="small"

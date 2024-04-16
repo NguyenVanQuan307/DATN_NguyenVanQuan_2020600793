@@ -6,7 +6,7 @@
                         <img src="images/dichvu/icon-books.png" alt="icon-books">
                         <div class="noidung">
                             <h6 class="tieude font-weight-bold">HƠN 1.000 Sản phẩm</h6>
-                            <p class="detail">Tuyển chọn bởi Computer Store</p>
+                            <p class="detail">Tuyển chọn bởi QLapTop</p>
                         </div>
                     </div>
                 </div>
