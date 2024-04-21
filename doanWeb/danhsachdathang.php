@@ -7,7 +7,7 @@ include './connect_db.php';
 include "./config_vnpay.php";
 
 
-$name = isset($_POST['name']) ? $_POST['name'] : '';
+$name = isset($_POST['name']) ? $_POST['name'] : ''; 
 $email = isset($_POST['email']) ? $_POST['email'] : '';
 $address = isset($_POST['address']) ? $_POST['address'] : '';
 $phone = isset($_POST['phone']) ? $_POST['phone'] : '';

@@ -9,7 +9,7 @@
                         <div class="fb-like" data-href="https://www.facebook.com/DealBook-110745443947730/"
                             data-width="300px" data-layout="button" data-action="like" data-size="small"
                             data-share="true"></div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="col-md-3 col-xs-6">
                     <div class="hotrokh">

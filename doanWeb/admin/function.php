@@ -4,7 +4,7 @@ function getAllFiles() {
     $allFiles = array();
     $allDirs = glob('images/*');
     foreach ($allDirs as $dir) {
-        $allFiles = array_merge($allFiles, glob($dir . "/*"));
+        $allFiles = array_merge($allFiles, glob($dir . "/*")); 
     }
     return $allFiles;
 }

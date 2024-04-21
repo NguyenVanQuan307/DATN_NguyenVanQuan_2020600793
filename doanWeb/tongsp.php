@@ -3,7 +3,7 @@ if (!isset($_SESSION)) {
     session_start();
 }
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="vi">
 
 <head>

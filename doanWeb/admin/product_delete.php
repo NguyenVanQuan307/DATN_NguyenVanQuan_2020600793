@@ -1,5 +1,5 @@
 <?php
-    ?>
+    ?> 
     <head>
         <style>
             .main-content {

@@ -8,7 +8,7 @@ if(isset($_SESSION['user']))
                             <i class="fa fa-shopping-cart"> 
                                 <?php if(isset($_SESSION['cart']))
                             {
-                                $cart1 = count($_SESSION['cart']);
+                                $cart1 = count($_SESSION['cart']); 
                                 echo $cart1 ;
                             }
                             else

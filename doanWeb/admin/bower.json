@@ -3,7 +3,7 @@
   "version": "1.0.7",
   "description": "AdminBSB - Free admin panel that is based on Bootstrap 3.x with Material Design",
   "main": "js/admin.js",
-  "authors": [
+  "authors": [ 
     "Güray Yarar"
   ],
   "license": "MIT",

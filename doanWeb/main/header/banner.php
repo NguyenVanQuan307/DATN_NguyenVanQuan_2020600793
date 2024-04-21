@@ -10,7 +10,7 @@
                             <div class="carousel-item active">
                                 <a href="#"><img src="images/banner/banner1.jpg" class="img-fluid"
                                         style="height: 500px;" width="1200px" alt="First slide"></a>
-                            </div>
+                            </div> 
                             <div class="carousel-item">
                                 <a href="#"><img src="images/banner/banner2.jpg" class="img-fluid"
                                         style="height: 500px;" width="1200px" alt="Second slide"></a>

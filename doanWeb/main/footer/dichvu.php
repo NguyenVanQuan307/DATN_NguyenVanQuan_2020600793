@@ -9,7 +9,7 @@
                             <p class="detail">Tuyển chọn bởi QLapTop</p>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="col-lg-3 col-sm-6">
                     <div class="dichvu d-flex align-items-center">
                         <img src="images/dichvu/icon-ship.png" alt="icon-ship">

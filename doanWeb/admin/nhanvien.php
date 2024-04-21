@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php
+<?php 
         include './connect_db.php';
         $result = mysqli_query($con, "SELECT * FROM admin ORDER BY `id` ASC");
         mysqli_close($con);

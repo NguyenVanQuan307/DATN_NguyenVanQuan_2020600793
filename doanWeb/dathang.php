@@ -4,7 +4,7 @@ if (!isset($_SESSION)) {
 }
 include './connect_db.php';
 
-?>
+?> 
 <style>
   * {
     box-sizing: border-box;

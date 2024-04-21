@@ -1,4 +1,4 @@
-<?php
+<?php  
 include 'connect_db.php';
 
 $category = mysqli_query($con, "SELECT * FROM `product`  ");
