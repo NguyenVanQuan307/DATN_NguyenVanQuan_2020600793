@@ -2,7 +2,7 @@
 <html>
 <?php
         include './connect_db.php';
-$result = mysqli_query($con, "SELECT * FROM user ORDER BY `id` ASC"); 
+$result = mysqli_query($con, "SELECT * FROM user ORDER BY `id` ASC");
 $total = mysqli_num_rows($result);
 $limit = 7;
 $page = ceil($total / $limit);

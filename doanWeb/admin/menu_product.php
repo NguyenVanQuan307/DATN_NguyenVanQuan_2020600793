@@ -1,5 +1,5 @@
 <?php
-include 'connect_db.php'; 
+include 'connect_db.php';
 $menu_product = mysqli_query($con, "SELECT * FROM `menu_product` order by id ASC  ");
 ?>
 <!DOCTYPE html>
@@ -131,12 +131,12 @@ $menu_product = mysqli_query($con, "SELECT * FROM `menu_product` order by id ASC
                     <div class="card">
                         <div class="header">
                             <h2>
-                                Quản lý loại sản phẩm
+                                Quản lý danh mục sản phẩm
                             </h2>
                         </div>
                         <div class="body">
                         <div class="buttons">
-                            <a href="menu_them.php">Thêm sản phẩm</a>
+                            <a href="menu_them.php">Thêm danh mục</a>
                              </div>
                             <div class="table-responsive">
                             
@@ -144,7 +144,7 @@ $menu_product = mysqli_query($con, "SELECT * FROM `menu_product` order by id ASC
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>Tên loại sản phẩm</th>
+                                            <th>Tên danh mục</th>
                                             <th>Xóa</th>
                                         </tr>
                                     </thead>

@@ -5,7 +5,7 @@ if(!isset($_SESSION))
 }
 ?>
 <!DOCTYPE html>
-<html lang="li"> 
+<html lang="li">
 <style>
     .btn-white{
         color: white;

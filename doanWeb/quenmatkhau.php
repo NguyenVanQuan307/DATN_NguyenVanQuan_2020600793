@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     if(empty($email))
     {
         $loi['email'] = "Bạn chưa nhập email";
-    } 
+    }
     if (empty($loi)) {
         $sql = mysqli_query($con, "SELECT * FROM `user` WHERE `email` = '$email'");
         // print_r($sql);

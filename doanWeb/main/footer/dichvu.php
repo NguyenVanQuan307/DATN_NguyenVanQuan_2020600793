@@ -6,10 +6,10 @@
                         <img src="images/dichvu/icon-books.png" alt="icon-books">
                         <div class="noidung">
                             <h6 class="tieude font-weight-bold">HƠN 1.000 Sản phẩm</h6>
-                            <p class="detail">Tuyển chọn bởi QLapTop</p>
+                            <p class="detail">Tuyển chọn bởi Computer Store</p>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="dichvu d-flex align-items-center">
                         <img src="images/dichvu/icon-ship.png" alt="icon-ship">

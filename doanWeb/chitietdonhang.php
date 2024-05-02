@@ -1,7 +1,7 @@
 <?php
 if(!isset($_SESSION))
 {
-    session_start(); 
+    session_start();
 }
 include './connect_db.php';
 
@@ -11,7 +11,7 @@ include './connect_db.php';
 
 
 <!DOCTYPE html>
-<html lang="vi"> 
+<html lang="vi">
 <head>
     <title>Nguyễn Văn Quân chuyên mua bán thiết bị điện tử và laptop giá rẻ</title>
     <meta name="description"

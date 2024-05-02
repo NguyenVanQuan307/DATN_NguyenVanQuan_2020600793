@@ -14,7 +14,7 @@ session_start();
 
 body, html {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #1d243d; 
+  background-color: #1d243d;
   padding: 0;
   margin: 0;
 }

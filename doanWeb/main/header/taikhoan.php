@@ -18,7 +18,7 @@ include './connect_db.php';
                                 <a  href="logout.php" class="dropdown-item nutdangky text-center mb-2">Đăng xuất</a>
                                 
                             </div>
- 
+
                      <?php }else { ?>
                         <div class="dropdown">
                                 <li class="nav-item account" type="button" class="btn dropdown" data-toggle="dropdown">

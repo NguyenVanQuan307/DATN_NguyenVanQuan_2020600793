@@ -3,7 +3,7 @@ if (!isset($_SESSION)) {
     session_start();
 }
 ?>
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -64,11 +64,8 @@ if (!isset($_SESSION)) {
                 Sắp xếp theo
                 <select name="sapxep" id="sapxep" class="form-control" style="width: 200px; display: inline-block;">
                     <option value="newest">Mới nhất</option>
-                    <option value="low_to_high">Giá: thấp ->cao</option>
-                    <option value="high_to_low">Giá: cao ->thấp</option>
-                    <option value="most_view">Xem nhiều nhất (không có trường xem)</option>
-                    <option value="most_comment">Nhiều nhận xét</option>
-                    <option value="rate">Đánh giá cao nhất</option>
+                    <option value="low_to_high">Giá: cao ->thấp</option>
+                    <option value="high_to_low">Giá: thấp ->cao</option>
                     <option value="a_z">Tên A -> Z</option>
                 </select>
             </div>
@@ -100,7 +97,7 @@ if (!isset($_SESSION)) {
                                 case 'rate':
                                     $sort_sql = "LEFT JOIN (SELECT product_id, AVG(rate) as avg_rate FROM rate GROUP BY product_id) AS ratings ON product.id = ratings.product_id ORDER BY avg_rate DESC"; // Sort by highest average rating
                                     break;
-                                case 'a-z':
+                                case 'a_z':
                                     $sort_sql = "ORDER BY name ASC";
                                     break;
                                 default:
@@ -127,7 +124,7 @@ if (!isset($_SESSION)) {
                                         <img class="card-img-top anh" src="<?php echo $row['image']; ?>">
                                         <div class="card-body noidungsp mt-3">
                                             <h6 class="card-title ten"><?php echo $row['name']; ?></h6>
-                                            <a href="chitietsp.php?id= <?php echo $row['id'] ?>" class="btn btn-success" role="button">Chi tiết</a>
+                                            <a href="chitietsp.php?id= <?php echo $row['id'] ?>" class="btn btn-success" role="button">Chi tiết </a>
                                             <div class="gia d-flex align-items-baseline">
                                                 <div class="giamoi"> <?php echo number_format($row['price']); ?> VNĐ</div>
                                             </div>

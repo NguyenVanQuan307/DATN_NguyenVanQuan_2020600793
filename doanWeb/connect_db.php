@@ -6,8 +6,8 @@ $password = "";
 $database = "doan";
 $con = mysqli_connect($host, $user, $password, $database);
 $con -> set_charset('utf8');
-if (mysqli_connect_errno()) { 
-    echo "Connection Fail: " . mysqli_connect_errno();
+if (mysqli_connect_errno()) {
+    echo "Connection Fail: " .mysqli_connect_errno();
     exit;
 }
 

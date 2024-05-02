@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="css/admin_style.css" >
-<script src="resources/ckeditor/ckeditor.js"></script> 
+<script src="resources/ckeditor/ckeditor.js"></script>
 <style>
     .danhmuc{
     min-width: 200px;

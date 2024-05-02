@@ -9,7 +9,7 @@ include'connect_db.php';
                         <div class="noidungheader text-white">
                             <i class="fa fa-bars"></i>
                             <span  class="text-uppercase font-weight-bold ml-1">Danh mục </span>
-                        </div> 
+                        </div>
                         <!-- CATEGORIES -->
                         <div class="categorycontent">
                         <ul>
@@ -32,10 +32,10 @@ include'connect_db.php';
                     <div class="benphai float-right">
                         <div class="hotline">
                             <i class="fa fa-phone"></i>
-                            <span>Hotline:<b>1900 1999</b> </span>
+                            <span>Hotline: 0326185212<b></b> </span>
                         </div>
                         <i class="fas fa-comments-dollar"></i>
-                        <a href="#">ailuyenqbh@gmail.com</a>
+                        <a href="#">anhquan30721@gmail.com</a>
                     </div>
                 </div>
             </div>

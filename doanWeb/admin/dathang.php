@@ -2,7 +2,7 @@
 include 'connect_db.php';
 if(!isset($_SESSION))
 {
-    session_start(); 
+    session_start();
 }
 $category = mysqli_query($con, "SELECT * FROM `orders`  ");
 //B1: tính tổng số bản ghi

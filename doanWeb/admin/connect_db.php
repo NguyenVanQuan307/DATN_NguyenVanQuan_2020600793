@@ -2,8 +2,8 @@
 
 $host = "localhost";
 $user = "root";
-$password = "123456";
-$database = "doan"; 
+$password = "";
+$database = "doan";
 $con = mysqli_connect($host, $user, $password, $database);
 
 $con -> set_charset('utf8');

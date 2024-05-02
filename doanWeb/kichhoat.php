@@ -10,7 +10,7 @@
 <style>
         .has-error {
             color: violet;
-        } 
+        }
     </style>
 <?php
 if(!isset($_SESSION))

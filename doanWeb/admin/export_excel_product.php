@@ -8,7 +8,7 @@ header('Content-Disposition: attachment; filename=product_data.csv');
 
 $output = fopen('php://output', 'w');
 
-fputcsv($output, array('Tên sản phẩm', 'Giá cũ', 'Giá mới', 'Tồn kho', 'Ngày cập nhật', 'Ngày tạo')); 
+fputcsv($output, array('Tên sản phẩm', 'Giá cũ', 'Giá mới', 'Tồn kho', 'Ngày cập nhật', 'Ngày tạo'));
 
 while ($row = mysqli_fetch_assoc($result)) {
     $formatted_row = array(

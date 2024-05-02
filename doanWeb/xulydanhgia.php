@@ -6,7 +6,7 @@ if(!isset($_SESSION))
 include './connect_db.php';
 $name = isset($_POST['name']) ? $_POST['name'] : ''; 
 $review = isset($_POST['review']) ? $_POST['review'] : ''; 
-// $error = []; 
+// $error = [];
 if($name == '' || $review == '')
 {
     ?>

@@ -8,19 +8,19 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="#"><img src="images/banner/banner1.jpg" class="img-fluid"
+                                <a href="#"><img src="images/banner/anh1.jpg" class="img-fluid"
                                         style="height: 500px;" width="1200px" alt="First slide"></a>
-                            </div> 
+                            </div>
                             <div class="carousel-item">
-                                <a href="#"><img src="images/banner/banner2.jpg" class="img-fluid"
+                                <a href="#"><img src="images/banner/anh2.jpg" class="img-fluid"
                                         style="height: 500px;" width="1200px" alt="Second slide"></a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#"><img src="images/banner/banner3.jpg" class="img-fluid"
+                                <a href="#"><img src="images/banner/anh3.jpg" class="img-fluid"
                                         style="height: 500px;"  width="1200px"  alt="Third slide"></a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#"><img src="images/banner/banner4.jpg" class="img-fluid"
+                                <a href="#"><img src="images/banner/anh4.jpg" class="img-fluid"
                                         style="height: 500px;"  width="1200px"  alt="Third slide"></a>
                             </div>
                         </div>

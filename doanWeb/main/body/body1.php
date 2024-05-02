@@ -12,7 +12,8 @@
                     <div class="col-12 d-flex justify-content-between align-items-left pb-2 bg-transparent pt-4">
                         <h1 class="header text-uppercase" style="font-weight: 400;">Các sản phẩm được ưa chuộng nhiều nhất </h1>
                         <a href="tongsp.php" class="btn btn-warning btn-sm text-white">Xem tất cả</a>
-                    </div> 
+                    </div>
+                </div>
                 <div class="khoisanpham" style="padding-bottom: 2rem;">
                 <?php
                                 $sql = "SELECT * FROM product WHERE menu_id=1 LIMIT 8 ";
