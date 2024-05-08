@@ -72,10 +72,10 @@ and open the template in the editor.
             <div class="section"></div>
   <main>
     <center>
-      <img class="responsive-img" style="width: 250px;" src="https://i.imgur.com/ax0NCsK.gif" />
+      <img class="responsive-img" style="width: 250px;" href="logo/logo.png" />
       <div class="section"></div>
 
-      <h5 class="indigo-text">Please, login into your account</h5>
+      <h5 class="indigo-text">Vui lòng đăng nhập vào tài khoản của bạn</h5>
       <div class="section"></div>
 
       <div class="container">
@@ -90,30 +90,30 @@ and open the template in the editor.
             <div class='row'>
               <div class='input-field col s12'>
                 <input class='validate' type='text' name='username' value="" />
-                <label >Enter your username</label>
+                <label >Tên đăng nhập</label>
               </div>
             </div>
 
             <div class='row'>
               <div class='input-field col s12'>
                 <input class='validate' type='password' name='password' value="" />
-                <label >Enter your password</label>
+                <label >Mật khẩu</label>
               </div>
               <label style='float: right;'>
-                <a class='pink-text' href='#!'><b>Forgot Password?</b></a>
+                <a class='pink-text' href='#!'><b></b></a>
               </label>
             </div>
 
             <br />
             <center>
               <div class='row'>
-                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Đăng nhập</button>
               </div>
             </center>
           </form>
         </div>
       </div>
-      <a href="#!">Create account</a>
+      
     </center>
 
     <div class="section"></div>

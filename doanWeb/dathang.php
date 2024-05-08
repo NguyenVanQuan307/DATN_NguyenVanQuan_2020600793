@@ -19,7 +19,24 @@ include './connect_db.php';
     border-radius: 4px;
     resize: vertical;
   }
-
+  input[type=email],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=phone],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
@@ -130,9 +147,10 @@ lên nhau thay vì nằm cạnh nhau */
   $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
   if ($name == '' || $address == '' || $phone == '' || $email = '') {
   ?>
+    
     <div id="edit-notify" class="box-content" align="center">
       <h4><?= "Vui lòng điền đầy đủ thông tin của bạn" ?></h4>
-    </div>
+    </div>  
   <?php
   }
   ?>
@@ -176,7 +194,7 @@ lên nhau thay vì nằm cạnh nhau */
             <label for="subject">Nội dung</label>
           </div>
           <div class="col-75">
-            <textarea name="content" id="" cols="30" rows="10"></textarea>
+            <textarea name="content" id="" cols="30" rows="10" placeholder="Nội dung"></textarea>
           </div>
         </div>
         <div class="row">
@@ -184,9 +202,9 @@ lên nhau thay vì nằm cạnh nhau */
             <label for="subject">Phương thức thanh toán</label>
           </div>
           <div class="col-75">
-            <input type="radio" name="payment_method" value="vnpay" checked>
+            <input type="radio" name="payment_method" value="vnpay" >
             <label for="vnpay">VNPAY</label>
-            <input type="radio" name="payment_method" value="ttknh" checked>
+            <input type="radio" name="ttknh" value="ttknh" >
             <label for="ttknh">Thanh toán khi nhận hàng</label><br>
           </div>
         </div>

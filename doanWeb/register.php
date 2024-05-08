@@ -88,9 +88,9 @@
 </head>
 <body>
     <div class="content">
-		<h1>User Register Form Widget</h1>
+		<h1></h1>
 		<div class="main">
-			<h2>Register For Free Account</h2>
+			<h2>Đăng ký tài khoản miễn phí</h2>
 			
 			<form action="./register.php?action=reg" method="Post" autocomplete="off">
                 <h5>Họ và tên</h5>
@@ -107,21 +107,21 @@
                         <?php echo (isset($error['email'])) ? $error['email']:''?>
                     </span>
                 </div>
-				<h5>Username</h5>
+				<h5>Tên đăng nhập</h5>
 				<input type="text" name="username" value=""><br/>
                 <div class="has-error">
                 <span>
                         <?php echo (isset($error['username'])) ? $error['username']:''?>
                     </span>
                 </div>
-                <h5>Password</h5>
+                <h5>Mật khẩu</h5>
 				<input type="password" name="password" value="" /></br>
                 <div class="has-error">
                 <span>
                         <?php echo (isset($error['password'])) ? $error['password']:''?>
                     </span>
                 </div>
-                <h5>Re-Password</h5>
+                <h5>Nhập lại mật khẩu</h5>
 				<input type="password" name="rpassword" value="" /></br>
                 <div class="has-error">
                 <span>
@@ -146,6 +146,11 @@
                     </select>
                 </div>
 				<input type="submit" value="Đăng ký">
+               
+                         <div>                            
+                                <a href="./login.php">Quay lại đăng nhập</a>
+                            </div>
+          
 			</form>
 		</div>
 	</div>

@@ -92,7 +92,7 @@ include 'function.php';
                 ?>
                 <div class = "container">
                     <div class = "error"><?= isset($error) ? $error : "Cập nhật thành công" ?></div>
-                    <!-- <a href = "sanpham.php">Quay lại danh sách sản phẩm</a> -->
+                    <a href = "sanpham.php">Quay lại danh sách sản phẩm</a>
                 </div>
                 <?php
             } else {

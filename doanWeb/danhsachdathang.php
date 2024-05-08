@@ -81,6 +81,10 @@ if ($name == '' || $address == '' || $phone == '' || $email == '') {
     if (isset($_POST['payment_method'])) {
         header('Location: ' . $vnp_Url);
         die();
+    }
+    if (isset($_POST['ttknh'])) {
+        header('Location:./danhsachdathang.php ');
+        die();
     } else {
         echo json_encode($returnData);
     }
@@ -124,7 +128,7 @@ if (isset($_POST['send'])) {
         $mail->send();
         echo 'Message has been sent';
     } catch (Exception $e) {
-        echo 'Bạn chưa nhập đủ thông tin Mailer Error: ', $mail->ErrorInfo;
+        echo 'Bạn chưa nhập đủ thông tin ';
     }
 }
 ?>
