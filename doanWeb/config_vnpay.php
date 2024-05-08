@@ -9,7 +9,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 $vnp_TmnCode = "KT5ZWWY4"; //Mã định danh merchant kết nối (Terminal Id)
 $vnp_HashSecret = "BBNCLGIBYUMKYODANNNCCBWEOQJEUDUU"; //Secret key
 $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-$vnp_Returnurl = "http://localhost/doanWeb/dathang.php";
+$vnp_Returnurl = "http://localhost/doanWeb/danhsachdathang.php";
 //Config input format
 //Expire
 $startTime = date("YmdHis");

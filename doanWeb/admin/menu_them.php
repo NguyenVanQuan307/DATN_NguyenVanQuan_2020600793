@@ -40,14 +40,16 @@ include 'function.php';
                 ?>
                 <div class = "container">
                     <div class = "error"><?= isset($error) ? $error : "Thêm danh mục thành công" ?></div>
-                    <a href = "menu_product.php">Quay lại danh sách danh mục</a>
+                    <!-- <a href = "menu_product.php">Quay lại danh sách danh mục</a> -->
                 </div>
                 <?php
             } 
                 ?>
                 <form id="product-form" method="POST" action="<?= (!empty($product) && !isset($_GET['task'])) ? "?action=edit&id=" . $_GET['id'] : "?action=add" ?>"  enctype="multipart/form-data">
                     <input type="submit" title="Lưu sản phẩm" value="" />
+                    <a href = "menu_product.php">Quay lại danh sách danh mục</a>
                     <div class="clear-both"></div>
+                    
                     <div class="wrap-field">
                         <label>Tên danh mục: </label>
                         <input type="text" name="name" value="<?= (!empty($product) ? $product['name'] : "") ?>" />

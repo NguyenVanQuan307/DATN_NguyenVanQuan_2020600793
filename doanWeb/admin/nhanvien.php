@@ -116,7 +116,7 @@
                                         <td>Username</td>
                                         <td>Password</td>
                                         <td>Trạng thái</td>
-                                        <td>Sửa</td>
+                                        <td></td>
                                         <td>Xóa</td>
                                         </tr>
                                     </thead>
@@ -130,7 +130,8 @@
                                             <td><?= $row['username'] ?></td>
                                             <td><?= $row['password'] ?></td>
                                             <td><?= $row['status'] == 1 ? "Kích hoạt" : "Block" ?></td>
-                                            <td><a href="./edit_user_admin.php?id=<?= $row['id'] ?> " class="btn btn-danger">Sửa</a></td>
+                                            <!-- <a href="./edit_user_admin.php?id=<?= $row['id'] ?> " class="btn btn-danger">Sửa</a> -->
+                                            <td></td>
                                             <td><a href="./delete_admin.php?id=<?= $row['id'] ?>" class="btn btn-danger">Xóa</a></td>
                                         </tr>
                                     <?php 

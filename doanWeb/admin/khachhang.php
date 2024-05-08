@@ -145,7 +145,7 @@ $result = mysqli_query($con,"SELECT * FROM user LIMIT $start,$limit");
                                     <td>Giới tính</td>
                                     <td>Cập nhật lần cuối</td>
                                     <td>Ngày lập</td>
-                                    <td>Sửa</td>
+                                    
                                     <td>Xóa</td>
                                      </tr>
                                     </thead>
@@ -165,7 +165,8 @@ $result = mysqli_query($con,"SELECT * FROM user LIMIT $start,$limit");
                                             <td><?= $row['gioitinh']  ?></td>
                                             <td><?= date('d/m/Y H:i', $row['last_updated']) ?></td>
                                             <td><?= date('d/m/Y H:i', $row['created_time']) ?></td>
-                                            <td><a href="./edit_user.php?id=<?= $row['id'] ?> " class="btn btn-danger">Sửa</a></td>
+                                            <!-- <a href="./edit_user.php?id=<?= $row['id'] ?> " class="btn btn-danger">Sửa</a> -->
+                                            
                                             <td><a href="./delete_user.php?id=<?= $row['id'] ?>" class="btn btn-danger">Xóa</a></td>
                                         </tr>
                                     <?php 

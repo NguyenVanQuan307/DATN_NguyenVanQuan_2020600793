@@ -155,7 +155,7 @@ $category = mysqli_query($con, "SELECT * FROM `product` LIMIT $start,$limit");
                         <div class="body">
                             <div class="buttons">
                                 <a href="./product_editing.php">Thêm sản phẩm</a>
-                                <a href="export_excel_product.php">Xuất Excel</a>
+                                <!-- <a href="export_excel_product.php">Xuất Excel</a> -->
                             </div>
                             <div class="table-responsive">
 

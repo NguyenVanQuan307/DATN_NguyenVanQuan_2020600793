@@ -38,7 +38,7 @@ if (!isset($_SESSION))
         src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     <link rel="canonical" href="">
     <meta name="google-site-verification" content="urDZLDaX8wQZ_-x8ztGIyHqwUQh2KRHvH9FhfoGtiEw" />
-    <link rel="icon" type="logo/png" sizes="32x32" href="logo/logo.png">
+    <link rel="icon" type="logo/png" sizes="32x32" href="logo/logo1.jpg">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <style>img[alt="www.000webhost.com"]{display: none;}</style>
 </head>

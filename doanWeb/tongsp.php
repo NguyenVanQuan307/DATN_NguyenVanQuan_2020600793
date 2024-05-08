@@ -7,7 +7,7 @@ if (!isset($_SESSION)) {
 <html lang="vi">
 
 <head>
-    <title>Computer Store mua bán thiết bị điện tử giá rẻ</title>
+    <title>QLapTop mua bán thiết bị điện tử giá rẻ</title>
     <meta name="description" content="Chuyên cung cấp đầy đủ linh kiện điện tử đáp ứng theo nhu cầu của khách hàng">
     <meta name="keywords" content="nhà sách online, mua sách hay, sách hot, sách bán chạy, sách giảm giá nhiều">
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@ if (!isset($_SESSION)) {
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
     <link rel="canonical" href="">
     <meta name="google-site-verification" content="urDZLDaX8wQZ_-x8ztGIyHqwUQh2KRHvH9FhfoGtiEw" />
-    <link rel="icon" type="logo/png" sizes="32x32" href="logo/logo.png">
+    <link rel="icon" type="logo/png" sizes="32x32" href="logo/logo1.jpg">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <style>
         img[alt="www.000webhost.com"] {
@@ -64,8 +64,8 @@ if (!isset($_SESSION)) {
                 Sắp xếp theo
                 <select name="sapxep" id="sapxep" class="form-control" style="width: 200px; display: inline-block;">
                     <option value="newest">Mới nhất</option>
-                    <option value="low_to_high">Giá: cao ->thấp</option>
-                    <option value="high_to_low">Giá: thấp ->cao</option>
+                    <option value="low_to_high">Giá: Cao ->Thấp</option>
+                    <option value="high_to_low">Giá: Thấp ->Cao</option>
                     <option value="a_z">Tên A -> Z</option>
                 </select>
             </div>
@@ -83,20 +83,11 @@ if (!isset($_SESSION)) {
                                     $sort_sql = "ORDER BY id DESC";
                                     break;
                                 case 'low_to_high':
-                                    $sort_sql = "ORDER BY price DESC";
+                                    $sort_sql = "ORDER BY price_new DESC";
                                     break;
                                 case 'high_to_low':
-                                    $sort_sql = "ORDER BY price ASC";
-                                    break;
-                                case 'most_view': 
-                                    $sort_sql = "ORDER BY view DESC";
-                                    break;
-                                case 'most_comment':
-                                    $sort_sql = "LEFT JOIN (SELECT product_id, COUNT(*) as comment_count FROM rate GROUP BY product_id) AS comments ON product.id = comments.product_id ORDER BY comment_count DESC"; // Sort by most comments
-                                    break;
-                                case 'rate':
-                                    $sort_sql = "LEFT JOIN (SELECT product_id, AVG(rate) as avg_rate FROM rate GROUP BY product_id) AS ratings ON product.id = ratings.product_id ORDER BY avg_rate DESC"; // Sort by highest average rating
-                                    break;
+                                    $sort_sql = "ORDER BY price_new ASC";
+                                    break;                                                           
                                 case 'a_z':
                                     $sort_sql = "ORDER BY name ASC";
                                     break;
@@ -126,7 +117,7 @@ if (!isset($_SESSION)) {
                                             <h6 class="card-title ten"><?php echo $row['name']; ?></h6>
                                             <a href="chitietsp.php?id= <?php echo $row['id'] ?>" class="btn btn-success" role="button">Chi tiết </a>
                                             <div class="gia d-flex align-items-baseline">
-                                                <div class="giamoi"> <?php echo number_format($row['price']); ?> VNĐ</div>
+                                                <div class="giamoi"> <?php echo number_format($row['price_new']); ?> VNĐ</div>
                                             </div>
                                         </div>
                                     </a>

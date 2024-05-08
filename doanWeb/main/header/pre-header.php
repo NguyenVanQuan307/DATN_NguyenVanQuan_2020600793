@@ -5,7 +5,7 @@
            <div>
         
            <a class="navbar-brand" href="./index.php" style="color: #CF111A;">
-           <img src="logo/logo.png" width="70px">
+           <img src="logo/logo1.jpg" width="70px">
            <b>Q</b>LapTop</img></a>
            </div>
 

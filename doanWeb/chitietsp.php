@@ -126,7 +126,7 @@ if(!isset($_SESSION))
                                     <div class="tietkiem">Giá mới: <b><?php echo number_format ($product['price_new']); ?> ₫</b>  </div> 
                                 </div>
                                 <div class="uudai my-3">
-                                    <h6 class="header font-weight-bold">Khuyến mãi & Ưu đãi tại Computer store:</h6>
+                                    <h6 class="header font-weight-bold">Khuyến mãi & Ưu đãi tại QLapTop:</h6>
                                     <ul>
                                         <li><b>1. Giá không kèm quà: </b><?php echo number_format ($product['price']); ?> đ </li>
                                         <li><b>2. Mua với giá: </b><?php echo number_format ($product['price_new']); ?> đ</li>
@@ -176,7 +176,7 @@ if(!isset($_SESSION))
                             <div class="col-md-5">
                                 <div class="thongtinsach">
                                     <ul>
-                                        <li> <span class="header font-weight-bold">Khi mua tại Computer store quý khác sẽ được:</span></li>
+                                        <li> <span class="header font-weight-bold">Khi mua tại QLapTop quý khác sẽ được:</span></li>
                                         <li><b>Miễn phí giao hàng </b>cho đơn hàng từ 1.500.000đ ở TP.HCM và 2.000.000đ ở
                                             Tỉnh/Thành khác</li>
                                         <li>Tặng sản phẩm kèm theo cho mỗi đơn hàng</li>

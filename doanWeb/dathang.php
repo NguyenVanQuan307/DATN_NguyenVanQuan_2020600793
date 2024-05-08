@@ -75,7 +75,7 @@ lên nhau thay vì nằm cạnh nhau */
 <html lang="vi">
 
 <head>
-  <title>Computer Store mua bán thiết bị điện tử giá rẻ</title>
+  <title>QLapTop mua bán thiết bị điện tử giá rẻ</title>
   <meta name="description" content="Chuyên cung cấp đầy đủ linh kiện điện tử đáp ứng theo nhu cầu của khách hàng">
   <meta name="keywords" content="">
   <meta charset="UTF-8">
@@ -144,7 +144,7 @@ lên nhau thay vì nằm cạnh nhau */
             <label for="fname">Họ và tên</label>
           </div>
           <div class="col-75">
-            <input type="text" id="" name="name" placeholder="Tên của bạn">
+            <input type="text" id="" name="name" placeholder="Tên của bạn" >
           </div>
         </div>
         <div class="row">
@@ -185,7 +185,9 @@ lên nhau thay vì nằm cạnh nhau */
           </div>
           <div class="col-75">
             <input type="radio" name="payment_method" value="vnpay" checked>
-            <label for="vnpay">VNPAY</label><br>
+            <label for="vnpay">VNPAY</label>
+            <input type="radio" name="payment_method" value="ttknh" checked>
+            <label for="ttknh">Thanh toán khi nhận hàng</label><br>
           </div>
         </div>
         <div class="row">

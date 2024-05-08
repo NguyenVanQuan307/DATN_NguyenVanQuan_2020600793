@@ -62,9 +62,9 @@ include 'function.php';
                     }
                     if (!isset($error)) {
                         if ($_GET['action'] == 'edit' && !empty($_GET['id'])) { //Cập nhật lại sản phẩm
-                            $result = mysqli_query($con, "UPDATE `product` SET `menu_id` = '" . $_POST['menu_id'] . "',`name` = '" . $_POST['name'] . "',`image` =  '" . $image . "', `price` = " . str_replace('.', '', $_POST['price']) . ", `price_new` = " . str_replace('.', '', $_POST['price_new']) . ", `content` = '" . $_POST['content'] . "', `last_updated` = " . time() . " WHERE `product`.`id` = " . $_GET['id']);
+                            $result = mysqli_query($con, "UPDATE `product` SET `menu_id` = '" . $_POST['menu_id'] . "',`name` = '" . $_POST['name'] . "',`image` =  '" . $image . "', `price` = " . str_replace('.', '', $_POST['price']) . ", `price_new` = " . str_replace('.', '', $_POST['price_new']) . ", `quantity` = '" . $_POST['quantity'] . "', `content` = '" . $_POST['content'] . "', `last_updated` = " . time() . " WHERE `product`.`id` = " . $_GET['id']);
                         } else { //Thêm sản phẩm
-                            $result = mysqli_query($con, "INSERT INTO `product` (`id`,`menu_id`, `name`, `image`, `price`,`price_new`, `content`, `created_time`, `last_updated`) VALUES (NULL, '" . $_POST['menu_id'] . "','" . $_POST['name'] . "','" . $image . "', " . str_replace('.', '', $_POST['price']) . "," . str_replace('.', '', $_POST['price_new']) . ", '" . $_POST['content'] . "', " . time() . ", " . time() . ");");
+                            $result = mysqli_query($con, "INSERT INTO `product` (`id`,`menu_id`, `name`, `image`, `price`,`price_new`, `quantity`, `content`, `created_time`, `last_updated`) VALUES (NULL, '" . $_POST['menu_id'] . "','" . $_POST['name'] . "','" . $image . "', " . str_replace('.', '', $_POST['price']) . "," . str_replace('.', '', $_POST['price_new']) . ",'" . $_POST['quantity'] . "', '" . $_POST['content'] . "', " . time() . ", " . time() . ");");
                         }
                         if (!$result) { //Nếu có lỗi xảy ra
                             $error = "Có lỗi xảy ra trong quá trình thực hiện.";
@@ -89,7 +89,7 @@ include 'function.php';
                 ?>
                 <div class = "container">
                     <div class = "error"><?= isset($error) ? $error : "Cập nhật thành công" ?></div>
-                    <a href = "sanpham.php">Quay lại danh sách sản phẩm</a>
+                    <!-- <a href = "sanpham.php">Quay lại danh sách sản phẩm</a> -->
                 </div>
                 <?php
             } else {
@@ -108,6 +108,7 @@ include 'function.php';
                 }
                 ?>
                 <form id="product-form" method="POST" action="<?= (!empty($product) && !isset($_GET['task'])) ? "?action=edit&id=" . $_GET['id'] : "?action=add" ?>"  enctype="multipart/form-data">
+                <a href = "sanpham.php">Quay lại danh sách sản phẩm</a>
                     <input type="submit" title="Lưu sản phẩm" value="" />
                     <div class="clear-both"></div>
                     <div class="wrap-field">
@@ -123,6 +124,11 @@ include 'function.php';
                     <div class="wrap-field">
                         <label>Giá mới: </label>
                         <input type="text" name="price_new" value="<?= (!empty($product) ? number_format($product['price_new'], 0, ",", ".") : "") ?>" />
+                        <div class="clear-both"></div>
+                    </div>
+                    <div class="wrap-field">
+                        <label>Số lượng: </label>
+                        <input type="text" name="quantity" value="<?= (!empty($product) ? number_format($product['quantity'], 0, ",", ".") : "") ?>" />
                         <div class="clear-both"></div>
                     </div>
                     <div class="wrap-field">
