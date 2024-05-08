@@ -85,6 +85,9 @@ include 'function.php';
                     }
                 } else {
                     $error = "Bạn chưa nhập thông tin sản phẩm.";
+                    ?>
+                    <a href = "product_editing.php">Quay lại thêm sản phẩm</a>
+                    <?php
                 }
                 ?>
                 <div class = "container">

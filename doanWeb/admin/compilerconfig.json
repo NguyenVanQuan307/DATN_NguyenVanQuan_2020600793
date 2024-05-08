@@ -2,7 +2,7 @@
   {
     "outputFile": "css/themes/all-themes.css",
     "inputFile": "scss/themes/_all-themes.scss"
-  },
+  }, 
   {
     "outputFile": "css/themes/theme-red.css",
     "inputFile": "scss/themes/theme-red.scss"

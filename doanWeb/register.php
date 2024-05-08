@@ -1,6 +1,6 @@
 <style>
     .gioitinh{
-    min-width: 200px;
+    min-width: 200px; 
     height: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;

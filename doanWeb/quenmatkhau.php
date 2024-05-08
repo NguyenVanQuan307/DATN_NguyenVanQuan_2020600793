@@ -1,4 +1,4 @@
-<style>
+<style> 
         .has-error {
             color: violet;
         }

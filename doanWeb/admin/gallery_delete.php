@@ -2,7 +2,7 @@
  include 'function.php';
  include 'connect_db.php';
  ?>
-<div class="main-content">
+<div class="main-content"> 
     <h1>Xóa sản phẩm</h1>
     <div id="content-box">
     <?php

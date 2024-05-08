@@ -112,7 +112,7 @@ if (isset($_POST['send'])) {
         $mail->Username = 'phuchuu1122@gmail.com';               
         $mail->Password = 'kocxvuhfwrfqvins';                         
         $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
+        $mail->Port = 587; 
         $mail->CharSet = "UTF-8";
         $mail->setFrom('ComputerStore@gmail.com', 'Computerstore.com');
         $mail->addAddress($_POST['email'], $_POST['name']);
