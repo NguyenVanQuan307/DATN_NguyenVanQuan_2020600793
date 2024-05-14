@@ -4,7 +4,7 @@ $host = "localhost";
 $user = "root";
 $password = "";
 $database = "doan";
-$con = mysqli_connect($host, $user, $password, $database);
+$con = mysqli_connect($host, $user, $password, $database); 
 $con -> set_charset('utf8');
 if (mysqli_connect_errno()) {
     echo "Connection Fail: " .mysqli_connect_errno();

@@ -2,7 +2,7 @@
 include 'connect_db.php';
 $menu_product = mysqli_query($con, "SELECT * FROM `menu_product` order by id ASC  ");
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 
 <head>

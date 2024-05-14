@@ -1,6 +1,6 @@
 <?php 
     ?>
-    <head>
+    <head> 
         <style>
             .main-content {
                 text-align: center;

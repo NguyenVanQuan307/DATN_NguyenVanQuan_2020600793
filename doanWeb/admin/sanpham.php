@@ -3,7 +3,7 @@ include 'connect_db.php';
 
 $category = mysqli_query($con, "SELECT * FROM `product`  ");
 //B1: tính tổng số bản ghi
-
+ 
 $total = mysqli_num_rows($category);
 
 //B2 : THiết lập số bảng ghi trên 1 trang

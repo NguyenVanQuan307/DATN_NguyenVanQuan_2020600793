@@ -3,7 +3,7 @@ include'connect_db.php';
 ?>
 <section class="duoinavbar">
         <div class="container text-white">
-            <div class="row justify">
+            <div class="row justify"> 
                 <div class="col-lg-3 col-md-5 " >
                     <div class="categoryheader">
                         <div class="noidungheader text-white">

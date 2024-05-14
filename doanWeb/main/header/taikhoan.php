@@ -1,7 +1,7 @@
 <?php
 include './connect_db.php';
  $user=(isset( $_SESSION['user'])) ? $user = $_SESSION['user'] : [];
-?>
+?> 
 <ul class="navbar-nav mb-1 ml-auto">
                     
                             <?php if(isset($user['username'])){ ?>

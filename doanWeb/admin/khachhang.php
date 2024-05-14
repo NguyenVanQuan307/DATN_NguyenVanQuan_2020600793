@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <?php
         include './connect_db.php';
 $result = mysqli_query($con, "SELECT * FROM user ORDER BY `id` ASC");

@@ -1,5 +1,5 @@
 <style> 
-        .has-error {
+        .has-error { 
             color: violet;
         }
     </style>

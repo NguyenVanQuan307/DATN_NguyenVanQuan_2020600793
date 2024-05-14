@@ -1,5 +1,5 @@
 <?php
-
+ 
 function getAllFiles() {
     $allFiles = array();
     $allDirs = glob('images/*');

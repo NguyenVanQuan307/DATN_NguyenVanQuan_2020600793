@@ -1,4 +1,4 @@
-<?php
+<?php 
 include 'connect_db.php';
 if(!isset($_SESSION)) 
 {

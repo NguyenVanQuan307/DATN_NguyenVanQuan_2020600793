@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="css/admin_style.css" >
 <script src="resources/ckeditor/ckeditor.js"></script>
 <style>
-    .danhmuc{
+    .danhmuc{ 
     min-width: 200px;
     height: 30px;
     border: 1px solid #ccc;

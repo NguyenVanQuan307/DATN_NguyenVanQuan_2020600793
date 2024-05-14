@@ -1,5 +1,5 @@
 <style>
-    .gioitinh{
+    .gioitinh{ 
     min-width: 200px; 
     height: 30px;
     border: 1px solid #ccc;

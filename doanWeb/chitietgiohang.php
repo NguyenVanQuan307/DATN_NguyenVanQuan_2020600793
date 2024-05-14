@@ -4,7 +4,7 @@ if(!isset($_SESSION))
     session_start();
 } 
 include './connect_db.php';
-
+ 
 $cart = (isset($_SESSION['cart'])) ? $_SESSION['cart'] : [];
 ?>
 <!DOCTYPE html>

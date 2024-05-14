@@ -1,5 +1,5 @@
 <div class="user-info">
-                <div class="image">
+                <div class="image"> 
                     <img src="images/user.png" width="48" height="48" alt="User" /> 
                 </div>
                 <div class="info-container">
