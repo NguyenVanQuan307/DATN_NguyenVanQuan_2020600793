@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
-        include './connect_db.php'; 
+        include './connect_db.php';
         $result = mysqli_query($con, "SELECT * FROM admin ORDER BY `id` ASC");
         mysqli_close($con);
 ?>
@@ -12,8 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
-    <!-- Favicon-->
+    <title>Admin QLAPTOP</title>    <!-- Favicon-->
     <link rel="icon" type="../logo/png" sizes="32x32" href="../logo/logo.png">
 
     <!-- Google Fonts -->

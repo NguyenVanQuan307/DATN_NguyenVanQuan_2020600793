@@ -2,7 +2,7 @@
 if(isset($_SESSION['user']))
 {
     ?>
-<ul class="navbar-nav mb-1 ml-auto"> 
+<ul class="navbar-nav mb-1 ml-auto">
                 <li class="nav-item giohang">
                         <a href="chitietgiohang.php" class="btn btn-secondary rounded-circle">
                             <i class="fa fa-shopping-cart"> 

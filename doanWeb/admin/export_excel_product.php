@@ -2,7 +2,7 @@
 include "connect_db.php";
 
 $result = mysqli_query($con, "SELECT * FROM `product`");
- 
+
 header('Content-Type: text/csv; charset=utf-8');
 header('Content-Disposition: attachment; filename=product_data.csv');
 

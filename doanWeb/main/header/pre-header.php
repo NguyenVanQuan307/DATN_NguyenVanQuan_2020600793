@@ -1,4 +1,4 @@
- 
+
 <nav class="navbar navbar-expand-md bg-white navbar-light">
         <div class="container">
             <!-- logo  -->
@@ -19,7 +19,7 @@
                 <form action="tongsp.php" class="form-inline ml-auto my-2 my-lg-0 mr-3" method="GET">
                     <div class="input-group" style="width: 520px;">
                         <input type="text" class="form-control" aria-label="Small"
-                            name="search"  placeholder="Nhập sách cần tìm kiếm..." value = "<?php if(isset($_GET["search"])) { echo $_GET["search"]; } ?>">
+                            name="search"  placeholder="Tìm kiếm..." value = "<?php if(isset($_GET["search"])) { echo $_GET["search"]; } ?>">
                         <div class="input-group-append">
                             <button type="submit" class="btn" style="background-color: #CF111A; color: white;">
                                 <i class="fa fa-search"></i>

@@ -1,7 +1,7 @@
 <?php
 if(!isset($_SESSION))
 {
-    session_start(); 
+    session_start();
 }
 ?>
 <!DOCTYPE html>
@@ -177,7 +177,7 @@ if(!isset($_SESSION))
                                 <div class="thongtinsach">
                                     <ul>
                                         <li> <span class="header font-weight-bold">Khi mua tại QLapTop quý khác sẽ được:</span></li>
-                                        <li><b>Miễn phí giao hàng </b>cho đơn hàng từ 1.500.000đ ở TP.HCM và 2.000.000đ ở
+                                        <li><b>Miễn phí giao hàng </b>cho đơn hàng từ 1.500.000đ ở TP.Hà Nội và 2.000.000đ ở
                                             Tỉnh/Thành khác</li>
                                         <li>Tặng sản phẩm kèm theo cho mỗi đơn hàng</li>
                                         <li>Lắp ráp máy miễn phí tại chi nhánh (theo yêu cầu)</li>

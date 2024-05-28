@@ -12,7 +12,7 @@
       "sourceMapBasePath": "",
       "sourceMap": false
     },
-    "sass": { 
+    "sass": {
       "includePath": "",
       "indentType": "space",
       "indentWidth": 2,

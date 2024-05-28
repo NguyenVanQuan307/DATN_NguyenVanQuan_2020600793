@@ -2,7 +2,7 @@
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-3 col-xs-6">
-                    <div class="gioithieu"> 
+                    <div class="gioithieu">
                         <h3 class="header text-uppercase font-weight-bold">Về QLapTop</h3>
                         <a href="#">Giới thiệu về QLapTop</a>
                         <a href="#">Tuyển dụng</a>

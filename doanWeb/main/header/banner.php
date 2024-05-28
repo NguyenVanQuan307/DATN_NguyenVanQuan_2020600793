@@ -4,7 +4,7 @@
                             <li data-target="#carouselId" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselId" data-slide-to="1"></li>
                             <li data-target="#carouselId" data-slide-to="2"></li>
-                            <li data-target="#carouselId" data-slide-to="3"></li> 
+                            <li data-target="#carouselId" data-slide-to="3"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -20,7 +20,7 @@
                                         style="height: 500px;"  width="1200px"  alt="Third slide"></a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#"><img src="images/banner/anh4.jpg" class="img-fluid"
+                                <a href="#"><img src="images/banner/anh5.jpg" class="img-fluid"
                                         style="height: 500px;"  width="1200px"  alt="Third slide"></a>
                             </div>
                         </div>

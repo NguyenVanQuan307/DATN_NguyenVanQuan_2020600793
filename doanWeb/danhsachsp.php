@@ -5,7 +5,7 @@ if(!isset($_SESSION))
 }
 ?> 
 <!DOCTYPE html>
-<html lang="vi"> 
+<html lang="vi">
 <head>
     <title>Nguyễn Văn Quân chuyên mua bán thiết bị điện tử và laptop giá rẻ</title>
     <meta name="description"

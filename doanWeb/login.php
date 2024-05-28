@@ -1,4 +1,4 @@
-<link rel="icon" type="logo/png" sizes="32x32" href="logo/logo.png"> 
+<link rel="icon" type="logo/png" sizes="32x32" href="logo/logo.png">
 <?php
 session_start(); 
 ?>
